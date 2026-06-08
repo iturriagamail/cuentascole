@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Graduación Infantil - Control de Gastos</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f5f5f5;
+    margin:0;
+    padding:40px 20px;
+    color:#222;
+}
+
+.container{max-width:1100px;margin:auto;}
+
+.card{
+    background:#fff;
+    border-radius:16px;
+    padding:24px;
+    margin-bottom:20px;
+    box-shadow:0 2px 8px rgba(0,0,0,.05);
+}
+
+.kpis{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.kpi{
+    background:white;
+    border-radius:16px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 2px 8px rgba(0,0,0,.05);
+}
+
+.tables{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+@media(max-width:768px){
+    .tables{grid-template-columns:1fr;}
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th,td{
+    padding:10px;
+    border-bottom:1px solid #eee;
+    text-align:left;
+}
+
+.total{font-weight:bold;}
+
+.progress{
+    background:#ddd;
+    height:18px;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.progress-bar{
+    width:93.9%;
+    height:100%;
+    background:#222;
+}
+
+.footer{
+    text-align:center;
+    color:#666;
+    margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+        <h1>🎓 Graduación Infantil 2026</h1>
+        <p>Control actualizado de gastos y fondo común.</p>
+    </div>
+
+    <div class="kpis">
+
+        <div class="kpi">
+            <small>Total abonado</small>
+            <h2>1.896,86 €</h2>
+        </div>
+
+        <div class="kpi">
+            <small>Total pendiente</small>
+            <h2>123,00 €</h2>
+        </div>
+
+        <div class="kpi">
+            <small>Presupuesto total</small>
+            <h2>2.019,86 €</h2>
+        </div>
+
+        <div class="kpi">
+            <small>Fondo remanente</small>
+            <h2>775,14 €</h2>
+        </div>
+
+    </div>
+
+    <div class="card">
+        <h2>Progreso del presupuesto</h2>
+
+        <div class="progress">
+            <div class="progress-bar"></div>
+        </div>
+
+        <p>93,9 % abonado</p>
+    </div>
+
+    <div class="tables">
+
+        <div class="card">
+
+            <h2>✅ Gastos abonados</h2>
+
+            <table>
+                <tr><th>Concepto</th><th>Importe</th></tr>
+
+                <tr><td>Medallas</td><td>350,00 €</td></tr>
+                <tr><td>Birretes</td><td>95,30 €</td></tr>
+                <tr><td>Camisetas</td><td>406,56 €</td></tr>
+                <tr><td>Fotógrafo</td><td>1.045,00 €</td></tr>
+
+                <tr class="total"><td>Total</td><td>1.896,86 €</td></tr>
+            </table>
+
+        </div>
+
+        <div class="card">
+
+            <h2>⏳ Pendiente</h2>
+
+            <table>
+                <tr><th>Concepto</th><th>Importe</th></tr>
+
+                <tr><td>Decoración globos (50%)</td><td>123,00 €</td></tr>
+
+                <tr class="total"><td>Total</td><td>123,00 €</td></tr>
+            </table>
+
+        </div>
+
+    </div>
+
+    <div class="card">
+        <h2>💰 Fondo común</h2>
+
+        <table>
+            <tr><td>Fondo disponible</td><td><strong>2.795,00 €</strong></td></tr>
+            <tr><td>Gasto total previsto</td><td><strong>2.019,86 €</strong></td></tr>
+            <tr>
+                <td>Saldo remanente</td>
+                <td><strong style="color:green;">775,14 €</strong></td>
+            </tr>
+        </table>
+
+    </div>
+
+    <div class="footer">
+        Documento de consulta · actualización continua
+    </div>
+
+</div>
+
+</body>
+</html>
